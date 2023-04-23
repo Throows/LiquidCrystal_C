@@ -13,7 +13,7 @@ To install it clone this repository in your components folder and add it to your
 
 ```CMake
 cmake_minimum_required(VERSION 3.5)
-set(EXTRA_COMPONENT_DIRS ../components)
+set(EXTRA_COMPONENT_DIRS  ${CMAKE_CURRENT_SOURCE_DIR}/../components)
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(awesome-project)
 ```
